@@ -292,15 +292,15 @@
     "/subscriptions/{subscriptionId}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/new": {
       "post": {
         "x-ms-examples": {
-          "Update security alert state on a subscription from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocation_new_example.json"
+          "Update security alert status on a subscription from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocationNew_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
-        "description": "Update the alert's state",
-        "operationId": "Alerts_UpdateSubscriptionLevelStateToDismiss",
+        "description": "Update the alert's status",
+        "operationId": "Alerts_UpdateSubscriptionLevelStatusToNew",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -331,15 +331,15 @@
     "/subscriptions/{subscriptionId}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/inProgress": {
       "post": {
         "x-ms-examples": {
-          "Update security alert state on a subscription from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocation_inProgress_example.json"
+          "Update security alert status on a subscription from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocationInProgress_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
-        "description": "Update the alert's state",
-        "operationId": "Alerts_UpdateSubscriptionLevelStateToResolve",
+        "description": "Update the alert's status",
+        "operationId": "Alerts_UpdateSubscriptionLevelStatusToInProgress",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -370,15 +370,15 @@
     "/subscriptions/{subscriptionId}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/closed": {
       "post": {
         "x-ms-examples": {
-          "Update security alert state on a subscription from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocation_closed_example.json"
+          "Update security alert status on a subscription from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocationClosed_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
-        "description": "Update the alert's state",
-        "operationId": "Alerts_UpdateSubscriptionLevelStateToActivate",
+        "description": "Update the alert's status",
+        "operationId": "Alerts_UpdateSubscriptionLevelStatusToClosed",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -409,15 +409,15 @@
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/new": {
       "post": {
         "x-ms-examples": {
-          "Update security alert state on a resource group from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocation_new_example.json"
+          "Update security alert status on a resource group from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocationNew_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
-        "description": "Update the alert's state",
-        "operationId": "Alerts_UpdateResourceGroupLevelStateToResolve",
+        "description": "Update the alert's status",
+        "operationId": "Alerts_UpdateResourceGroupLevelStatusToNew",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -451,15 +451,15 @@
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/inProgress": {
       "post": {
         "x-ms-examples": {
-          "Update security alert state on a resource group from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocation_inProgress_example.json"
+          "Update security alert status on a resource group from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocationInProgress_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
-        "description": "Update the alert's state",
-        "operationId": "Alerts_UpdateResourceGroupLevelStateToDismiss",
+        "description": "Update the alert's status",
+        "operationId": "Alerts_UpdateResourceGroupLevelStatusToInProgress",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -493,15 +493,15 @@
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/closed": {
       "post": {
         "x-ms-examples": {
-          "Update security alert state on a resource group from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocation_closed_example.json"
+          "Update security alert status on a resource group from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocationClosed_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
-        "description": "Update the alert's state",
-        "operationId": "Alerts_UpdateResourceGroupLevelStateToActivate",
+        "description": "Update the alert's status",
+        "operationId": "Alerts_UpdateResourceGroupLevelStatusToClosed",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
