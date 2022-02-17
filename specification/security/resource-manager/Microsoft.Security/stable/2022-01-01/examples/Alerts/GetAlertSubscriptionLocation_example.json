@@ -71,16 +71,48 @@
             "Property1": "Property1 information"
           },
           "compromisedEntity": "vm1",
-          "techniques": ["T1059", "T1053", "T1072"],
-          "subTechniques": ["T1059.001", "T1059.006", "T1053.002"],
+          "techniques": [
+            "T1059",
+            "T1053",
+            "T1072"
+          ],
+          "subTechniques": [
+            "T1059.001",
+            "T1059.006",
+            "T1053.002"
+          ],
           "supportingEvidence": {
             "type": "tabularEvidences",
             "title": "Investigate activity test",
-            "columns": [ "Date", "Activity", "User", "TestedText", "TestedValue" ],
+            "columns": [
+              "Date",
+              "Activity",
+              "User",
+              "TestedText",
+              "TestedValue"
+            ],
             "rows": [
-              [ "2022-01-17T07:03:52.034Z", "Log on", "testUser", "false", false ],
-              [ "2022-01-17T07:03:52.034Z", "Log on", "testUser2", "false", false ],
-              [ "2022-01-17T07:03:52.034Z", "Log on", "testUser3", "true", true ]
+              [
+                "2022-01-17T07:03:52.034Z",
+                "Log on",
+                "testUser",
+                "false",
+                false
+              ],
+              [
+                "2022-01-17T07:03:52.034Z",
+                "Log on",
+                "testUser2",
+                "false",
+                false
+              ],
+              [
+                "2022-01-17T07:03:52.034Z",
+                "Log on",
+                "testUser3",
+                "true",
+                true
+              ]
             ]
           }
         }

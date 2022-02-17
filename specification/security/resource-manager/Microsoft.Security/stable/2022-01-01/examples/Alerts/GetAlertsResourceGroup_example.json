@@ -72,8 +72,16 @@
                 "Property1": "Property1 information"
               },
               "compromisedEntity": "vm1",
-              "techniques": ["T1059", "T1053", "T1072"],
-              "subTechniques": ["T1059.001", "T1059.006", "T1053.002"],
+              "techniques": [
+                "T1059",
+                "T1053",
+                "T1072"
+              ],
+              "subTechniques": [
+                "T1059.001",
+                "T1059.006",
+                "T1053.002"
+              ],
               "supportingEvidence": {
                 "supportingEvidenceList": [
                   {
@@ -83,11 +91,15 @@
                           "arguments": {
                             "sensitiveEnumerationTypes": {
                               "type": "string[]",
-                              "value": [ "UseDesKey" ]
+                              "value": [
+                                "UseDesKey"
+                              ]
                             },
                             "domainName": {
                               "type": "entity",
-                              "value": { "$ref": "2" }
+                              "value": {
+                                "$ref": "2"
+                              }
                             }
                           },
                           "localizationKey": "AATP_ALERTS_LDAP_SENSITIVE_ATTRIBUTE_RECONNAISSANCE_SECURITY_ALERT_EVIDENCE_ENUMERATION_DETAIL_A7C00BD7",
@@ -102,11 +114,35 @@
                   {
                     "type": "tabularEvidences",
                     "title": "Investigate activity test",
-                    "columns": [ "Date", "Activity", "User", "TestedText", "TestedValue" ],
+                    "columns": [
+                      "Date",
+                      "Activity",
+                      "User",
+                      "TestedText",
+                      "TestedValue"
+                    ],
                     "rows": [
-                      [ "2022-01-17T07:03:52.034Z", "Log on", "testUser", "false", false ],
-                      [ "2022-01-17T07:03:52.034Z", "Log on", "testUser2", "false", false ],
-                      [ "2022-01-17T07:03:52.034Z", "Log on", "testUser3", "true", true ]
+                      [
+                        "2022-01-17T07:03:52.034Z",
+                        "Log on",
+                        "testUser",
+                        "false",
+                        false
+                      ],
+                      [
+                        "2022-01-17T07:03:52.034Z",
+                        "Log on",
+                        "testUser2",
+                        "false",
+                        false
+                      ],
+                      [
+                        "2022-01-17T07:03:52.034Z",
+                        "Log on",
+                        "testUser3",
+                        "true",
+                        true
+                      ]
                     ]
                   }
                 ],
