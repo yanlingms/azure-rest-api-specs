@@ -96,10 +96,8 @@
                               ]
                             },
                             "domainName": {
-                              "type": "entity",
-                              "value": {
-                                "$ref": "2"
-                              }
+                              "type": "string",
+                              "value": "domainName"
                             }
                           },
                           "localizationKey": "AATP_ALERTS_LDAP_SENSITIVE_ATTRIBUTE_RECONNAISSANCE_SECURITY_ALERT_EVIDENCE_ENUMERATION_DETAIL_A7C00BD7",
