@@ -328,18 +328,18 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/inProgress": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/active": {
       "post": {
         "x-ms-examples": {
-          "Update security alert status to inProgress on a subscription from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocationInProgress_example.json"
+          "Update security alert status to active on a subscription from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertSubscriptionLocationActive_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
         "description": "Update the alert's status",
-        "operationId": "Alerts_UpdateSubscriptionLevelStatusToInProgress",
+        "operationId": "Alerts_UpdateSubscriptionLevelStatusToActive",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -448,18 +448,18 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/inProgress": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Security/locations/{ascLocation}/alerts/{alertName}/active": {
       "post": {
         "x-ms-examples": {
-          "Update security alert status to inProgress on a resource group from a security data location": {
-            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocationInProgress_example.json"
+          "Update security alert status to active on a resource group from a security data location": {
+            "$ref": "./examples/Alerts/UpdateAlertResourceGroupLocationActive_example.json"
           }
         },
         "tags": [
           "Alerts"
         ],
         "description": "Update the alert's status",
-        "operationId": "Alerts_UpdateResourceGroupLevelStatusToInProgress",
+        "operationId": "Alerts_UpdateResourceGroupLevelStatusToActive",
         "parameters": [
           {
             "$ref": "../../../common/v1/types.json#/parameters/ApiVersion"
@@ -834,7 +834,7 @@
           "type": "string",
           "enum": [
             "New",
-            "InProgress",
+            "Active",
             "Closed"
           ],
           "x-ms-enum": {
@@ -846,7 +846,7 @@
                 "description": "An alert which doesn't specify a value is assigned the status 'New'"
               },
               {
-                "value": "InProgress",
+                "value": "Active",
                 "description": "Alert is in handling process"
               },
               {
