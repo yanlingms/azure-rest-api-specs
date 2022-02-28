@@ -643,6 +643,11 @@
       "type": "object",
       "description": "describes security alert properties.",
       "properties": {
+        "version": {
+          "readOnly": true,
+          "type": "string",
+          "description": "Schema version."
+        },
         "alertType": {
           "readOnly": true,
           "type": "string",
